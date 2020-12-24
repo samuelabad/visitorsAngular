@@ -10,6 +10,7 @@ export class TableVisitorsComponent implements OnInit {
   @Input() listaVisitantes: any[];
 
   constructor() {
+
   }
 
   ngOnInit(): void {
