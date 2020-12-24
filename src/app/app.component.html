@@ -1,10 +1,11 @@
 <app-nav-bar></app-nav-bar>
-<div class="container-fluid">
+<div class="container">
   <div class="row">
-    <div class="col-4">
+    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
       <app-table-visitors [listaVisitantes]="visitantes"></app-table-visitors>
     </div>
-    <div class="col-4"><app-form-visitors></app-form-visitors></div>
+    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+      <app-form-visitors (visitor)="getVisitor($event)"></app-form-visitors>
+    </div>
   </div>
 </div>
-
