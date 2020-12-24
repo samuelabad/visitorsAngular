@@ -1,2 +1,10 @@
 <app-nav-bar></app-nav-bar>
-<app-table-visitors [listaVisitantes]="visitantes"></app-table-visitors>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-4">
+      <app-table-visitors [listaVisitantes]="visitantes"></app-table-visitors>
+    </div>
+    <div class="col-4"><app-form-visitors></app-form-visitors></div>
+  </div>
+</div>
+
