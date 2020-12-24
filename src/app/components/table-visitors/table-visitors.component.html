@@ -9,20 +9,10 @@
               </tr>
             </thead>
             <tbody>
-              <tr>
-                <td>Mark</td>
-                <td>Otto</td>
-                <td>@mdo</td>
-              </tr>
-              <tr>
-                <td>Jacob</td>
-                <td>Thornton</td>
-                <td>@fat</td>
-              </tr>
-              <tr>
-                <td>Mark</td>
-                <td>Otto</td>
-                <td>@mdo</td>
+              <tr *ngFor="let visitor of listaVisitantes">
+                <td>{{visitor.name}}</td>
+                <td>{{visitor.firstName}}</td>
+                <td>{{visitor.document}}</td>
               </tr>
             </tbody>
         </table>
